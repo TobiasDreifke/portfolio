@@ -33,6 +33,7 @@ app-top-elements {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 99999;
 }
 
 .centered_elements {
