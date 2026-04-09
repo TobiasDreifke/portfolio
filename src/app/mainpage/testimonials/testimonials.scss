@@ -1,0 +1,206 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.testi_wrapper {
+
+    min-height: 100svh;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    gap: 1rem;
+    transition: all 0.5s ease;
+
+}
+
+.testi_container {
+    width: 95%;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.image_shadow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+    // background: radial-gradient(ellipse 80% 200% at center center,
+    //         rgba(0, 0, 0, 0) 40%,
+    //         rgb(28, 28, 28) 55%);
+}
+
+.headline_wrapper {
+    gap: 1rem;
+    padding: 0 0.7rem;
+
+    >h5,
+    >h2 {
+        color: $color_main;
+    }
+}
+
+
+.carousell_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+
+
+.carousell_container {
+    @include main_wrapper(none, $border_wrapper_color, 0.5rem);
+    position: relative;
+    max-width: 600px;
+    padding: 2rem;
+    flex: 0 0 auto;
+    display: flex;
+    transform: scale(0.9);
+    opacity: 0.5;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+    &.active {
+        transform: scale(1);
+        opacity: 1;
+        animation: popIn 0.3s ease forwards;
+    }
+
+    &:not(.active) {
+        transform: scale(0.9);
+        opacity: 0.5;
+    }
+
+    &.prev {
+        transform: scale(0.95) translateY(-5px);
+    }
+
+    &.next {
+        transform: scale(0.95) translateY(5px);
+    }
+
+}
+
+/* Animations */
+@keyframes popIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.caroussel_navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 0rem;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    transition: all 0.25s ease;
+
+    .arrow {
+        font-size: 1.5rem;
+        cursor: pointer;
+        user-select: none;
+
+        &:hover {
+            color: #3DCFB6;
+            transform: scale(1.1);
+            transition: 0.2s ease;
+        }
+    }
+
+    .dots {
+        display: flex;
+        gap: 0.5rem;
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $white;
+            transition: background-color 0.3s, transform 0.3s;
+
+            &.active {
+                background-color: $color_main;
+                animation: pulseDot 0.3s ease;
+            }
+        }
+
+        @keyframes pulseDot {
+            0% {
+                transform: scale(0.8);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+// ------------------ RESPONSIVE ----------------
+@media (max-width: 1080px) {
+
+    .carousell_wrapper {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        width: 100%;
+        padding: 2rem;
+        transition: transform 0.5s ease;
+    }
+
+    .carousell_container {
+        width: 100%;
+        padding: 2rem;
+        flex: 1 1 1;
+        display: block;
+    }
+
+    .testi_wrapper {
+        gap: 0rem;
+        min-height: 0;
+        padding-top: 5rem;
+        padding-top: 5rem;
+        min-height: 0;
+
+    }
+
+    .testi_container {
+        gap: 1rem;
+    }
+
+    .caroussel_navigation {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}

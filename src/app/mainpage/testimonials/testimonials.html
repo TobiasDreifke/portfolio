@@ -1,0 +1,28 @@
+<section class="testi_wrapper">
+    <div class="testi_container">
+        <div class="headline_wrapper" data-aos="fade-up" data-aos-anchor-placement="top_center">
+            <h5>{{ 'testimonials.headline' | translate }}</h5>
+        </div>
+
+        <div class="carousell_wrapper" >
+            @for (testimonial of visibleItems; track $index) {
+            <div   class="carousell_container"  [class.active]="$index===1">
+                <app-single-testimonial  [single_testimonial]="testimonial"></app-single-testimonial>
+            </div>
+            }
+        </div>
+
+        <div class="caroussel_navigation">
+            <p class="arrow" (click)="prev()" data-aos="fade-left" data-aos-anchor-placement="bottom_center"
+                data-aos-duration="1000">&larr;</p>
+            <div class="dots" data-aos="zoom-in" data-aos-anchor-placement="bottom_center">
+                @for (testimonial of testimonials; track $index) {
+                <span class="dot" [class.active]="$index === currentIndex" (click)="goTo($index)"></span>
+                }
+            </div>
+            <p class="arrow" (click)="next()" data-aos="fade-right" data-aos-anchor-placement="bottom_center"
+                data-aos-duration="1000">&rarr;</p>
+        </div>
+    </div>
+    <div class="image_shadow"></div>
+</section>

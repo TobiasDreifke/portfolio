@@ -1,0 +1,219 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.top_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.top_container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    pointer-events: none;
+}
+
+.line {
+    width: 1px;
+    pointer-events: none;
+}
+
+.left {
+    margin-left: 10%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    pointer-events: none;
+    background: $color_main;
+    transition: all 0.25s ease;
+}
+
+.arrow_wrapper {
+    padding-left: 5rem;
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow_container {
+    animation: floatY 4s linear infinite;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow_link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        flex-shrink: 0;
+        stroke: $color_main;
+    }
+
+    :hover {
+        cursor: pointer;
+    }
+}
+
+
+.right {
+    margin-right: 10%;
+    height: 30%;
+    background: $color_secondary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    pointer-events: none;
+    transition: all 0.25s ease;
+}
+
+.line_right_content_wrapper {
+    padding-left: 10rem;
+    transform: rotate(-90deg);
+    display: flex;
+    gap: 1rem;
+    pointer-events: auto;
+
+    .icon_wrapper {
+        position: relative;
+        display: inline-block;
+
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            flex-shrink: 0;
+            stroke: $fontcolor_main;
+            stroke-width: 1px;
+            stroke-linecap: round;
+            fill: none;
+            transform: rotate(90deg);
+            transition: all 0.25s ease;
+
+            &:hover {
+                cursor: pointer;
+                stroke: $color_secondary;
+                stroke-width: 1.5px;
+            }
+        }
+
+        &::after {
+            content: '•';
+            position: absolute;
+            top: 110%;
+            left: 25%;
+            transform: translateY(-50%);
+            color: $color_secondary;
+            margin-left: 0.3rem;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+
+    p {
+        cursor: default;
+
+        &:hover {
+            color: $color_main;
+            cursor: default;
+        }
+    }
+}
+
+.d_none_icon {
+    display: none;
+}
+
+.d_none_mail {
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .d_none_icon {
+        position: relative;
+        display: inline-block;
+
+        img {
+            transform: rotate(90deg);
+            filter: brightness(0) saturate(100%) invert(70%) sepia(74%) saturate(377%) hue-rotate(115deg) brightness(89%) contrast(89%);
+
+            &:hover {
+                cursor: pointer;
+                filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2805%) hue-rotate(175deg) brightness(106%) contrast(70%);
+            }
+        }
+
+        &::after {
+            content: '•';
+            position: absolute;
+            top: 110%;
+            left: 25%;
+            transform: translateY(-50%);
+            color: $color_main;
+            margin-left: 0.3rem;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+
+    .d_none_mail {
+        display: none;
+    }
+
+    .line_right_content_wrapper {
+        padding-left: 10.5rem;
+        transform: rotate(-90deg);
+        display: flex;
+        gap: 1rem;
+        pointer-events: auto;
+    }
+
+
+
+    .right {
+        margin-right: 10%;
+        height: 20%;
+    }
+
+    .left {
+        margin-left: 10%;
+        height: 14%;
+    }
+
+    .arrow_wrapper {
+        padding-left: 7rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .left {
+        margin-left: 10%;
+        height: 14%;
+    }
+}

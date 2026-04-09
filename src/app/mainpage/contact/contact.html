@@ -1,0 +1,101 @@
+<section class="contact_wrapper">
+    <div class="contact_container">
+        <div class="columns_wrapper_left">
+            <div class="headline_wrapper">
+                <h4 data-aos="fade-up" data-aos-anchor-placement="top_center" >{{ 'contact.contactMe' |
+                    translate }}</h4>
+                <h2 data-aos="fade-right" >{{ 'contact.letsWorkTogether' | translate }}</h2>
+                <h4 data-aos="fade-right" class="subheadline">{{ 'contact.gotProblem' | translate }}</h4>
+                <p data-aos="fade-right">{{ 'contact.encourageText' | translate }}</p>
+                <p data-aos="fade-right"> {{ 'contact.needFrontend' | translate }} <span class="highlight">{{
+                        'contact.letsTalk' | translate }}</span></p>
+            </div>
+        </div>
+        <div class="columns_wrapper_right" data-aos="fade-left">
+            <form #contactForm="ngForm" class="columns_container_right" (ngSubmit)="onSubmit(contactForm)">
+                <div class="input_wrapper">
+                    <!-- <div class="divider"></div> -->
+
+                    <div class="honeypot_field" aria-hidden="true">
+                        <label for="website">Website</label>
+                        <input [(ngModel)]="contactData.website" [ngModelOptions]="{ standalone: true }" type="text"
+                            id="website" tabindex="-1" autocomplete="off" />
+                    </div>
+
+                    @if (messageSent) {
+                    <div class="message_sent_wrapper">
+                        <div class="message_sent_container"> {{ 'contact.messageSent' | translate }}</div>
+                    </div>
+                    }
+                    <label for="name">{{ 'contact.labelName' | translate }}</label>
+                    <input [(ngModel)]="contactData.name" name="name" id="name" class="input_field_text"
+                        [ngClass]="{ 'input_error': contactForm.submitted && !name.valid }" type="text"
+                        placeholder="{{ contactForm.submitted && !name.valid ? ('contact.placeholderNameError' | translate) : ('contact.placeholderName' | translate) }}"
+                        required maxlength="100" #name="ngModel" />
+
+                    <div class="divider"></div>
+
+                    <label for="email">{{ 'contact.labelEmail' | translate }}</label>
+                    <input [(ngModel)]="contactData.email" name="email" id="email" class="input_field_text"
+                        [ngClass]="{ 'input_error': contactForm.submitted && !email.valid }" type="email"
+                        placeholder="{{ contactForm.submitted && !email.valid ? ('contact.placeholderEmailError' | translate) : ('contact.placeholderEmail' | translate) }}"
+                        required maxlength="254" #email="ngModel" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
+
+                    <div class="divider"></div>
+
+                    <label for="message">{{ 'contact.labelMessage' | translate }}</label>
+                    <input [(ngModel)]="contactData.message" name="message" id="message" class="input_field_text"
+                        [ngClass]="{ 'input_error': contactForm.submitted && !message.valid }" type="text"
+                        placeholder="{{ contactForm.submitted && !message.valid ? ('contact.placeholderMessageError' | translate) : ('contact.placeholderMessage' | translate) }}"
+                        required minlength="10" maxlength="5000" #message="ngModel" />
+
+                    <div class="divider"></div>
+                </div>
+
+                <div class="checkbox_wrapper">
+                    <div class="checkbox_container">
+                        <input type="checkbox" name="agree" [(ngModel)]="contactData.agree" required />
+                        <p>
+                            {{ 'contact.privacyText1' | translate }}
+                            <a routerLink="/privacy" class="privacy">{{ 'contact.privacyText2' | translate }}</a>
+                            {{ 'contact.privacyText3' | translate }}
+                        </p>
+                    </div>
+
+                    <ng-container>
+                        @if (contactForm.submitted) {
+                        <div class="input_error_text">
+                            @if (!name.valid && name.dirty) { <div class="input_error_text">{{ 'contact.nameError' |
+                                translate }}
+                            </div>
+                            }
+                            @else if(!email.valid && email.dirty) { <div class="input_error_text">{{
+                                'contact.emailError' | translate
+                                }}
+                            </div>
+                            }
+                            @else if (!message.valid && message.dirty) { <div class="input_error_text">{{
+                                'contact.messageError' |
+                                translate
+                                }}</div>
+                            }
+                            @else if (!contactData.agree) { <div class="input_error_text">{{ 'contact.privacyError' |
+                                translate }}</div>
+                            }
+
+                        </div>
+                        }
+                    </ng-container>
+                </div>
+
+                <div class="form_footer">
+                    <div class="btn btn--filled">
+                        <input class="jump_marks" type="submit" value="{{ 'contact.sayHello' | translate }}" />
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</section>

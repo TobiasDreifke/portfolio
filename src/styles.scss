@@ -1,0 +1,125 @@
+@use 'variables' as *;
+@use 'fonts' as *;
+@use 'mixins' as *;
+@use 'styles/buttons';
+
+html.no-scroll,
+html.no-scroll body {
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+
+    // background-color: $background_main;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+
+    scroll-behavior: smooth;
+    text-align: left;
+    cursor: default;
+}
+
+body {
+    width: 100%;
+    background-color: $background_main;
+    // background: linear-gradient(35deg, rgba(28, 28, 28, 100) 85%, rgba(34, 92, 81, 1) 100%);
+    overflow-x: hidden;
+    color: $fontcolor_main;
+}
+
+html {
+    // background-color: rgb(211, 211, 211);
+    overflow-x: hidden;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: clamp(2rem, 8vw, 128px);
+    text-align: center;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: clamp(1.75rem, 5vw, 64px);
+    text-align: left;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: clamp(1.25rem, 3vw, 40px);
+    text-align: center;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: clamp(1.25rem, 2.5vw, 32px);
+    text-align: left;
+}
+
+h5 {
+    font-weight: 400;
+    font-size: clamp(1rem, 2vw, 24px);
+    text-align: center;
+}
+
+p {
+    font-weight: 400;
+    font-size: clamp(1rem, 1.5vw, 18px);
+    text-align: left;
+}
+
+.highlight {
+    color: $highlight_color;
+}
+
+// .cursor-shadow {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 150px;
+//     height: 150px;
+//     border-radius: 50%;
+//     pointer-events: none;
+//     z-index: 9999;
+//     filter: blur(8px);
+
+
+//     background: radial-gradient(circle,
+//             rgba(60, 207, 182, 0.25) 0%,
+//             rgba(60, 207, 182, 0.1) 25%,
+//             rgba(60, 207, 182, 0) 55%);
+
+//     transition: transform 0.02s ease-out;
+// }
+
+.jump_mark_wrapper {
+    @include jump-mark($border-color: $color_secondary, $hover-color: $color_main);
+}
+
+/* hide page scrollbar */
+html {
+    scrollbar-width: none;
+}
+
+/* Firefox */
+body {
+    -ms-overflow-style: none;
+}
+
+/* IE and Edge */
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* Chrome */
+/* end hide page scrollbar */

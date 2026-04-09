@@ -1,0 +1,34 @@
+<section class="skills_wrapper">
+    <div class="skills_container">
+        <div class="columns_wrapper_left">
+            <div data-aos="fade-up" data-aos-anchor-placement="top_center" class="headline_container">
+                <h4 class="highlight">{{ 'skills.technologies' | translate }}</h4>
+            </div>
+
+            <div data-aos="fade-right" class="text_container">
+                <h2 class="highlight">{{ 'skills.skillset' | translate }}</h2>
+                <p>{{ 'skills.intro' | translate }}</p>
+
+                <div>
+                    <h4>{{ 'skills.anotherSkill' | translate }}</h4>
+                    <p>{{ 'skills.contactMe' | translate }}</p>
+                </div>
+
+                <div>
+                    <a class="btn btn--filled sliding-text-btn" href="#contact">{{ 'skills.letsTalk' | translate }}</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns_wrapper_right">
+            <div class="icon_container">
+                @for (skill of skillSet; track skill) {
+                <div>
+                    <app-icon [name]="skill.icon"></app-icon> 
+                    <p>{{ skill.language }}</p>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

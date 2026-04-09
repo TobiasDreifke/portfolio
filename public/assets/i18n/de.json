@@ -1,0 +1,184 @@
+{
+    "parameter": "Einfache Übersetzung ohne Parameter",
+    "hero": {
+        "h3": "Full-Stack Entwickler",
+        "h1": "Tobias Dreifke",
+        "projects": "meine Arbeiten",
+        "contact": "schreib mir"
+    },
+    "navbar": {
+        "about": "Über mich",
+        "skills": "Fähigkeiten",
+        "projects": "Projekte"
+    },
+    "banner": {
+        "fullstack": "Full-Stack Entwickler",
+        "openToWork": "Offen für neue Projekte",
+        "basedIn": "Berlin, Deutschland",
+        "remote": "Verfügbar für Remote-Arbeit"
+    },
+    "about_me": {
+        "headline": "Wer ich bin",
+        "title": "Über mich",
+        "intro": "Hi, ich bin Tobias. Ich komme aus dem Produkt- und 3D-Design und habe dort gelernt, komplexe Ideen greifbar zu machen. Jetzt mache ich das Gleiche im Code: Ich baue zeitgemäße, responsive Interfaces und durchdachte Backends mit Python. Wenn Design und Logik zusammenfinden, fühle ich mich zuhause.",
+        "question1": "Remote, Hybrid oder Onsite - mir ist wichtig, dass Zusammenarbeit funktioniert. Der Ort ist zweitrangig.",
+        "question2": "Ich lerne schnell, probiere viel aus und integriere neue Tools oder Frameworks direkt in kleine Projekte, um praktisch zu verstehen, wie sie funktionieren.",
+        "question3": "Ich genieße Teamarbeit, weil verschiedene Perspektiven oft zu eleganteren Lösungen führen."
+    },
+    "skills": {
+        "technologies": "Technologien",
+        "skillset": "Fähigkeiten",
+        "intro": "Ich arbeite sowohl im Frontend als auch im Backend: Ich entwickle responsive Interfaces mit HTML, CSS und JavaScript und baue strukturierte, zuverlässige Logik mit Python. Mein Hintergrund im Produkt- und 3D-Design gibt mir ein ausgeprägtes Gespür für Usability, klare Strukturen und Details. Ich bleibe neugierig, lerne schnell und halte Schritt mit der schnellen Entwicklung moderner Webtechnologien.",
+        "anotherSkill": "Du brauchst eine weitere Fähigkeit?",
+        "contactMe": "Melde dich gern bei mir. Ich bin immer offen für neue Projekte und Möglichkeiten, mein Wissen zu erweitern, zusammenzuarbeiten und weiterzuwachsen.",
+        "letsTalk": "Lass uns sprechen"
+    },
+    "contact": {
+        "contactMe": "Kontaktiere mich",
+        "letsWorkTogether": "Lass uns zusammenarbeiten",
+        "gotProblem": "Hast du ein Problem zu lösen?",
+        "encourageText": "Schreib mir einfach, wenn du Unterstützung brauchst. Ich freue mich über jede Zusammenarbeit, bei der wir gemeinsam etwas Sinnvolles entwickeln können.",
+        "needFrontend": "Frontend? Backend? Fullstack? Kein Problem!",
+        "letsTalk": "Lass uns sprechen!",
+        "labelName": "Wie heißt du?",
+        "placeholderName": "Dein Name hier",
+        "placeholderNameError": "*Bitte gib deinen Namen ein",
+        "labelEmail": "Wie lautet deine E-Mail?",
+        "placeholderEmail": "deinemail@email.com",
+        "placeholderEmailError": "*Bitte gib eine gültige E-Mail ein",
+        "labelMessage": "Wie kann ich dir helfen?",
+        "placeholderMessage": "Hallo, ich interessiere mich für...",
+        "placeholderMessageError": "*Bitte gib eine Nachricht ein",
+        "privacyText1": "Ich habe die",
+        "privacyText2": "Datenschutzerklärung",
+        "privacyText3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+        "privacyError": "*Du musst der Datenschutzerklärung zustimmen",
+        "messageError": "*Bitte gib eine Nachricht mit mindestens 10 Zeichen ein",
+        "emailError": "*Bitte gib eine gültige E-Mail ein",
+        "nameError": "*Bitte gib deinen Namen ein",
+        "sayHello": "Sag Hallo",
+        "messageSent": "deine Nachricht wurde erfolgreich verschickt"
+    },
+    "testimonials": {
+        "headline": "Was meine Kollegen über mich sagen",
+        "first": {
+            "text": "Tobias ist ein zuverlässiges und engagiertes Mitglied des Projektteams. Er kommuniziert klar und sorgt für effiziente Abstimmungen. Seine strukturierte Arbeitsweise und konsequente Umsetzung von Projektmanagement-Prinzipien sichern stabile Abläufe. Sein sauberer, gut lesbarer Code und seine technische Sorgfalt sind ein zentraler Beitrag zum Erfolg des Projekts.",
+            "author": "Demis Moysidis – Join"
+        },
+        "second": {
+            "text": "Tobias zeigt hohe Kompetenz und arbeitet strukturiert und präzise. Er löst komplexe Probleme mit analytischem Denken und bewahrt dabei Ruhe und Gelassenheit. Durch seine Erfahrung und seine zuverlässige Teamarbeit trägt er wesentlich zum Projekterfolg bei und ist ein respektierter Kollege.",
+            "author": "Amer Alkhalidy – Join"
+        },
+        "third": {
+            "text": "Tobias arbeitet engagiert und übernimmt einen großen Teil der Projektaufgaben. Er zeigt vollen Einsatz und stellt mit seiner Zuverlässigkeit und Verantwortung sicher, dass das Projekt erfolgreich verläuft. Ohne seine konsequente Arbeit wäre das Ergebnis deutlich schwächer. Ich empfehle ihn uneingeschränkt weiter.",
+            "author": "Madina Askar Zada – Kochwelt"
+        },
+        "fourth": {
+            "text": "Tobias zeigt Ehrgeiz und sucht für jedes Problem eine Lösung. Er hilft Teammitgliedern zuverlässig und teilt sein Wissen offen. Seine Unterstützung stärkt das Team spürbar.",
+            "author": "Julian Kohn – Join"
+        }
+    },
+    "projects": {
+        "headline": "Portfolio",
+        "featured": "Ausgewählte Projekte",
+        "description": "Entdecke hier eine Auswahl meiner Arbeiten – Interagiere mit Projekten, um meine Fähigkeiten live zu sehen.",
+        "about": "Worum geht es in diesem Projekt?",
+        "nextProject": "Nächstes Projekt",
+        "github": "github",
+        "liveTest": "live demo",
+        "join": {
+            "name": "Join",
+            "description": "Ein Task-Manager im Kanban-Stil, entwickelt mit Angular, TypeScript und Firebase. Ich habe am Frontend gearbeitet, Services und Formulare umgesetzt sowie den GitHub-Workflow betreut. Zusätzlich habe ich das Projektmanagement im Scrum-Stil übernommen und Struktur in die Zusammenarbeit des Teams gebracht."
+        },
+        "knighthood": {
+            "name": "Knighthood",
+            "description": "Ein objektorientiertes Jump-and-Run-Spiel mit erweitertem Gameplay und komplett überarbeitetem Look. Ich habe eigene Sprites und Sounds erstellt, zusätzliche Mechaniken wie zwei Wurfgeschosse, ein Schlag- und Schwertkampfsystem, mehrere Gegnertypen sowie einen Parallax-Hintergrund und ein Scoreboard integriert. Die Spiellogik läuft in JavaScript, das Layout in HTML und CSS."
+        },
+        "coderr": {
+            "name": "Coderr",
+            "description": "Ein Marktplatz für Entwickler-Dienstleistungen, der auf einer robusten Django-REST-Architektur basiert. Ich habe ein komplexes Backend-System implementiert, das Profile für Kunden und Anbieter trennt, Angebote verwaltet und eine detaillierte Filter- sowie Review-Logik bietet. Die API nutzt Token-basierte Authentifizierung und ermöglicht eine nahtlose Kommunikation zwischen Frontend und einer PostgreSQL-Datenbank, um professionelle Business-Workflows abzubilden."
+        },
+        "pokedex": {
+            "name": "Pokedex",
+            "description": "Eine digitale Pokédex-App, die Pokémon-Daten wie Typen, Fähigkeiten und Entwicklungen dynamisch über die PokéAPI lädt. Ich habe die Datenabfrage und -verarbeitung mit JavaScript umgesetzt und das Interface mit HTML und CSS gestaltet. Das Projekt zeigt meine Fähigkeit, API-Daten strukturiert aufzubereiten und in ein benutzerfreundliches, responsives Frontend zu übersetzen."
+        },
+        "spectrogram": {
+            "name": "Spectrogram",
+            "description": "Ein browserbasiertes Echtzeit-Spektrogramm zur Analyse von Harsh Vocals – entwickelt mit Vanilla JavaScript und der Web Audio API. Das Tool visualisiert Obertöne und Subharmonics direkt im Browser ohne externe Abhängigkeiten. Es zeigt meine Fähigkeit, komplexe Audio-Datenströme performant zu verarbeiten und in aussagekräftige visuelle Darstellungen zu übersetzen."
+        }
+    },
+    "footer": {
+        "fullstack": "Full Stack Developer",
+        "location": "Berlin, Deutschland",
+        "legal": "Impressum",
+        "privacy": "Datenschutzerkl\u00e4rung"
+    },
+    "privacy": {
+        "title": "Datenschutzerkl\u00e4rung",
+        "intro": "Diese Datenschutzerkl\u00e4rung informiert dar\u00fcber, welche personenbezogenen Daten verarbeitet werden, wenn du diese Portfolio-Website besuchst oder das Kontaktformular nutzt.",
+        "controller_title": "Verantwortlicher",
+        "controller_email": "E-Mail: mail@tobiasdreifke.com",
+        "general_title": "Allgemeine Hinweise",
+        "general_text": "Personenbezogene Daten werden nur in dem Umfang verarbeitet, der f\u00fcr die Bereitstellung einer funktionsf\u00e4higen Website, die Bearbeitung von Anfragen und die technische Sicherheit des Auftritts erforderlich ist.",
+        "hosting_title": "Hosting und Bereitstellung der Website",
+        "hosting_text": "Beim Aufruf dieser Website werden technisch erforderliche Verbindungsdaten verarbeitet, damit die Seite in deinem Browser ausgeliefert werden kann. Dazu k\u00f6nnen insbesondere IP-Adresse, Datum und Uhrzeit des Zugriffs, angeforderte Ressource, Referrer, Browsertyp und Betriebssystem geh\u00f6ren. Die Website wird bei ALL-INKL.COM - Neue Medien M\u00fcnnich gehostet. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO aufgrund des berechtigten Interesses an einem sicheren und stabilen Betrieb der Website.",
+        "contact_form_title": "Kontaktformular",
+        "contact_form_intro": "Wenn du das Kontaktformular nutzt, werden folgende Daten verarbeitet und an den serverseitigen Mail-Endpunkt auf dieser Domain \u00fcbermittelt:",
+        "contact_form_data_name": "Name",
+        "contact_form_data_email": "E-Mail-Adresse",
+        "contact_form_data_message": "Nachrichteninhalt",
+        "contact_form_data_consent": "Best\u00e4tigung, dass du diese Datenschutzerkl\u00e4rung akzeptiert hast",
+        "contact_form_purpose": "Die Daten werden ausschlie\u00dflich verarbeitet, um deine Anfrage zu bearbeiten und gegebenenfalls mit dir in Kontakt zu treten.",
+        "contact_form_legal_basis": "Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO, wenn du deine Einwilligung erteilst, sowie Art. 6 Abs. 1 lit. b DSGVO, sofern deine Anfrage auf den Abschluss eines Vertrags oder vorvertragliche Kommunikation gerichtet ist. In allen \u00fcbrigen F\u00e4llen erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO wegen des berechtigten Interesses, Anfragen zu beantworten.",
+        "contact_form_storage": "Deine Nachricht wird nur so lange gespeichert, wie es f\u00fcr die Bearbeitung der Anfrage erforderlich ist. Sofern gesetzliche Aufbewahrungspflichten bestehen, erfolgt eine Speicherung f\u00fcr die jeweils vorgeschriebene Dauer.",
+        "server_logs_title": "Server-Logfiles",
+        "server_logs_text": "Aus technischen und sicherheitsbezogenen Gr\u00fcnden kann die Hosting-Umgebung Server-Logdaten vor\u00fcbergehend speichern. Dazu geh\u00f6ren in der Regel IP-Adresse, Zugriffszeitpunkt, angeforderte Datei, Statuscode, Browserinformationen und Betriebssystem. Diese Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.",
+        "recipients_title": "Empf\u00e4nger",
+        "recipients_text": "Personenbezogene Daten werden nur weitergegeben, soweit dies f\u00fcr den Betrieb der Website oder die Bearbeitung der Kommunikation erforderlich ist. Das betrifft vor allem den f\u00fcr diese Domain eingesetzten Hosting-Anbieter ALL-INKL.COM - Neue Medien M\u00fcnnich sowie die technische E-Mail-Infrastruktur, \u00fcber die Kontaktanfragen empfangen werden.",
+        "external_links_title": "Externe Links",
+        "external_links_text": "Diese Website enth\u00e4lt Links zu externen Seiten wie GitHub, LinkedIn und Projektseiten. Diese Dienste werden erst aufgerufen, wenn du einen Link selbst anklickst. Ab diesem Zeitpunkt ist der jeweilige Anbieter f\u00fcr die Verarbeitung personenbezogener Daten auf seiner Website verantwortlich.",
+        "cookies_title": "Cookies",
+        "cookies_text": "Nach dem aktuellen Stand der Implementierung verwendet diese Website keine eigenen Cookies zu Analyse-, Marketing- oder Profiling-Zwecken.",
+        "analytics_title": "Analyse und Tracking",
+        "analytics_text": "Im Anwendungscode sind derzeit keine Analyse-, Tracking- oder Marketing-Tools eingebunden.",
+        "rights_title": "Deine Rechte",
+        "rights_intro": "Nach der DSGVO stehen dir hinsichtlich deiner personenbezogenen Daten insbesondere folgende Rechte zu:",
+        "right_access": "Recht auf Auskunft",
+        "right_rectification": "Recht auf Berichtigung",
+        "right_erasure": "Recht auf L\u00f6schung",
+        "right_restriction": "Recht auf Einschr\u00e4nkung der Verarbeitung",
+        "right_portability": "Recht auf Daten\u00fcbertragbarkeit",
+        "right_withdrawal": "Recht, eine erteilte Einwilligung mit Wirkung f\u00fcr die Zukunft zu widerrufen",
+        "right_objection": "Recht auf Widerspruch gegen Verarbeitungen auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO",
+        "complaint_title": "Beschwerderecht",
+        "complaint_text": "Du hast au\u00dferdem das Recht, dich bei einer Datenschutz-Aufsichtsbeh\u00f6rde zu beschweren, wenn du der Ansicht bist, dass die Verarbeitung deiner personenbezogenen Daten gegen geltendes Recht verst\u00f6\u00dft.",
+        "updates_title": "\u00c4nderungen dieser Datenschutzerkl\u00e4rung",
+        "updates_text": "Diese Datenschutzerkl\u00e4rung kann angepasst werden, wenn sich diese Website oder die rechtlichen Anforderungen \u00e4ndern.",
+        "contact_final": "Wenn du Fragen zum Datenschutz hast, kontaktiere bitte mail@tobiasdreifke.com.",
+        "date_text": "Stand: 09. April 2026"
+    },
+    "legal": {
+        "title": "Impressum",
+        "imprint": "Impressum",
+        "name": "upup.berlin z.H. Tobias Dreifke",
+        "address": "Hauptstraße 13 - Aufgang F",
+        "zipcode_city": "10317 Berlin",
+        "exploring_board": "Erkundung des Boards",
+        "email": "mail[at]tobiasdreifke.com.",
+        "acceptance_terms_title": "Akzeptanz der Bedingungen",
+        "acceptance_terms_text": "Durch den Zugriff auf und die Nutzung von Portfolio (Produkt) erkennen Sie die folgenden Bedingungen sowie alle Richtlinien, Vorgaben oder Änderungen an, die Ihnen von Zeit zu Zeit präsentiert werden. Wir, die aufgelisteten Studierenden, können die Bedingungen von Zeit zu Zeit ohne Ankündigung ändern.",
+        "scope_ownership_title": "Umfang und Eigentum des Produkts",
+        "scope_ownership_text1": "Portfolio wurde als Teil eines Gruppenprojekts im Webentwicklungs-Bootcamp bei der Developer Akademie GmbH entwickelt. Es hat einen Bildungszweck und ist nicht für umfangreiche private oder geschäftliche Nutzung vorgesehen. Daher können wir keine konstante Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder andere Qualitätsaspekte dieses Produkts garantieren.",
+        "scope_ownership_text2": "Das Design von Portfolio ist Eigentum der Developer Akademie GmbH. Eine unbefugte Nutzung, Reproduktion, Modifikation, Verbreitung oder Vervielfältigung des Designs ist streng verboten.",
+        "proprietary_rights_title": "Eigentumsrechte",
+        "proprietary_rights_text": "Abgesehen vom Design, das der Developer Akademie GmbH gehört, behalten wir, die aufgelisteten Studierenden, alle Eigentumsrechte an Portfolio, einschließlich aller damit verbundenen urheberrechtlich geschützten Materialien, Marken und sonstigen Eigentumsinformationen.",
+        "use_product_title": "Nutzung des Produkts",
+        "use_product_text": "Portfolio darf nur für rechtmäßige Zwecke gemäß allen geltenden Gesetzen und Vorschriften verwendet werden. Jede Nutzung von Portfolio für illegale Aktivitäten oder um eine andere Person zu belästigen, zu schädigen, zu bedrohen oder einzuschüchtern, ist streng verboten. Sie sind allein für Ihre Interaktionen mit anderen Nutzern von Portfolio verantwortlich.",
+        "disclaimer_title": "Haftungsausschluss und Begrenzung der Haftung",
+        "disclaimer_text": "Portfolio wird \"wie besehen\" ohne jegliche Garantie bereitgestellt, sei sie ausdrücklich oder stillschweigend, einschließlich, aber nicht beschränkt auf stillschweigende Garantien der Marktgängigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung von Rechten. Weder wir, die aufgelisteten Studierenden, noch die Developer Akademie GmbH haften für direkte, indirekte, beiläufige, spezielle, Folgeschäden oder beispielhafte Schäden, einschließlich, aber nicht beschränkt auf Schäden durch Gewinnverlust, Goodwill, Nutzung, Daten oder andere immaterielle Verluste, selbst wenn wir auf die Möglichkeit solcher Schäden hingewiesen wurden.",
+        "indemnity_title": "Schadloshaltung",
+        "indemnity_text": "Sie erklären sich damit einverstanden, uns, die aufgelisteten Studierenden, die Developer Akademie GmbH sowie unsere Partner, Führungskräfte, Direktoren, Vertreter und Mitarbeiter von allen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Haftungen (einschließlich angemessener Anwaltskosten) freizustellen, zu verteidigen und schadlos zu halten, die sich aus Ihrer Nutzung von Portfolio und/oder Ihrer Verletzung dieses Impressums ergeben.",
+        "contact_text": "Bei Fragen oder Mitteilungen kontaktieren Sie uns bitte unter mail[at]tobiasdreifke.com.",
+        "date_text": "Datum: 05. September 2025"
+    }
+}

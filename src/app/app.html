@@ -1,0 +1,18 @@
+<!-- <div class="cursor-shadow" id="cursor-shadow"></div>
+<div class="center_content">
+    <app-navbar></app-navbar>
+     <router-outlet (activate)="onActivate()"></router-outlet>
+    <app-footer></app-footer>
+   
+</div> -->
+<div class="cursor-shadow" id="cursor-shadow"></div>
+<div class="center_content">
+    <app-navbar></app-navbar>
+
+    <!-- Scrollable container with all sections -->
+    <div class="mainpage_wrapper">
+        <router-outlet (activate)="onActivate()"></router-outlet>
+    </div>
+
+    <app-footer></app-footer>
+</div>

@@ -1,0 +1,86 @@
+// ---------------- BUTTONS --------------------
+
+@mixin jump-mark($border-color: $main_color,
+    $hover-color: null,
+    $hover-scale: 1.07,
+    $button-scale: 0.95,
+    $padding: 0.5rem 1rem) {
+    $hover-color: if($hover-color ==null, #3DCFB6, $hover-color);
+
+    border: 1px $border-color solid;
+    border-radius: 2rem;
+    padding: $padding;
+    display: inline-block;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+
+    >a {
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    &:hover {
+        border-color: $hover-color;
+        transform: scale($button-scale);
+        cursor: pointer;
+
+        >a {
+            color: $hover-color;
+            transform: scale($hover-scale);
+            cursor: pointer;
+        }
+    }
+}
+@mixin jump-mark-filled($border-color: #D9D9D9,
+    $hover-color: null,
+    $hover-scale: 1.07,
+    $button-scale: 0.95,
+    $padding: 0.5rem 1rem) {
+    $hover-color: if($hover-color ==null, #3DCFB6, $hover-color);
+
+    border: 1px $border-color solid;
+    border-radius: 2rem;
+    padding: $padding;
+    display: inline-block;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+
+    >a {
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    &:hover {
+        border-color: $hover-color;
+        transform: scale($button-scale);
+        cursor: pointer;
+
+        >a {
+            color: $hover-color;
+            transform: scale($hover-scale);
+            cursor: pointer;
+        }
+    }
+}
+
+@mixin flexbox($d: flex,
+    $fd: column,
+    $jc: flex-start,
+    $ai: stretch,
+    $g: 0) {
+    display: $d;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $g;
+}
+
+@mixin main_wrapper($background_wrapper_color, $color_main, $br: 1rem) {
+    background-color: $background_wrapper_color;
+    border: 1px solid $color_main;
+    border-radius: $br;
+}

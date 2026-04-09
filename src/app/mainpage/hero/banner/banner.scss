@@ -1,0 +1,53 @@
+@use 'variables' as *;
+
+.banner_wrapper {
+  width: 110%;
+  box-shadow:
+    0.5px 0.5px 25px 0.5px rgba(51, 51, 51, 0.1),
+    0.5px -0.5px 25px 0.5px rgba(51, 51, 51, 0.1);
+  position: relative;
+  bottom: 0;
+  left: -5px;
+  z-index: 9999;
+}
+
+
+
+.banner_container {
+  display: flex;
+  align-items: center;
+  background-color: $background_main;
+  height: 2rem;
+  position: relative;
+}
+
+.scrolling_content {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  animation: scroll 15s linear infinite;
+}
+
+.banner_wrapper:hover .scrolling_content {
+  animation-play-state: paused;
+}
+
+.content {
+  display: flex;
+  gap: 1rem;
+  white-space: nowrap;
+
+  >p {
+    color: $fontcolor_main;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-25%);
+  }
+}
