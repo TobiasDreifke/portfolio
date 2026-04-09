@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter, ViewChild, ElementRef, AfterViewInit, OnDestroy, NgZone, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { Projects } from '../../../interfaces/projects.interface';
 import { TranslatePipe } from '@ngx-translate/core';
 import { ModalService } from '../../../services/modal-service';
@@ -9,7 +9,7 @@ import { IconComponent } from '../../../shared/icon/icon';
 
 @Component({
   selector: 'app-project-01',
-  imports: [CommonModule, TranslatePipe,IconComponent],
+  imports: [TranslatePipe, IconComponent],
   templateUrl: './project-01.html',
   styleUrls: ['./project-01.scss'],
 })

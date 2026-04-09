@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 import { TranslatePipe, TranslateDirective, TranslateService } from '@ngx-translate/core';
 import { IconComponent } from '../../shared/icon/icon';
 
 @Component({
   selector: 'app-skills',
-  imports: [CommonModule, TranslatePipe, IconComponent],
+  imports: [TranslatePipe, IconComponent],
   templateUrl: './skills.html',
   styleUrl: './skills.scss'
 })

@@ -1,11 +1,11 @@
 import { Component, Input, OnInit, OnChanges, SimpleChanges } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-icon',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './icon.html',
   styleUrl: './icon.scss'
 })

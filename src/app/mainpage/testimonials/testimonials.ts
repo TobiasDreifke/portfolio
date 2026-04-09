@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { Testimonial } from '../../interfaces/testimonial.interface';
 import { SingleTestimonial } from './single-testimonial/single-testimonial';
 import { TESTIMONIALS } from '../../data/testimonials.data';
-import { CommonModule } from '@angular/common';
+
 import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-testimonials',
-  imports: [SingleTestimonial, CommonModule, TranslatePipe],
+  imports: [SingleTestimonial, TranslatePipe],
   templateUrl: './testimonials.html',
   styleUrls: ['./testimonials.scss']
 })
